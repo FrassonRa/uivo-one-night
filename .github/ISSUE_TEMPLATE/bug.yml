@@ -1,0 +1,32 @@
+name: Problema no app
+description: Algo não funcionou como deveria.
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: O que aconteceu?
+      description: Conte o que você fez e o que o app fez de errado.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: O que você esperava que acontecesse?
+  - type: input
+    id: roles
+    attributes:
+      label: Papéis da partida
+      description: Quais cartas estavam selecionadas, se tiver a ver com o problema.
+  - type: input
+    id: version
+    attributes:
+      label: Versão do app
+      description: Aparece embaixo do título, na tela inicial (ex. v1.0.0).
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Celular e versão do Android
+      placeholder: ex. Samsung Galaxy A54, Android 14
